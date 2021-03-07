@@ -33,8 +33,8 @@ Gem::Specification.new do |s|
   s.name = 'RubyDec'
   s.version = '0.0.0'
   s.license = 'MIT'
-  s.summary = 'Obk'
-  s.description = 'Obk'
+  s.summary = 'Ruby decorator to throttle object method calls'
+  s.description = 'Ruby decorator to throttle object method calls'
   s.authors = ['Denis Treshchev']
   s.email = 'denistreshchev@gmail.com'
   s.homepage = 'http://github.com/denistreshchev/RubyDec'

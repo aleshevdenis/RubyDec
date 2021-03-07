@@ -33,17 +33,22 @@
 class Obk
   def initialize(origin, pause: 1000)
     @origin = origin
-    @pause = pause
+    @pause = pause / 1000.0
+    @latest = Time.now
   end
 
   def method_missing(*args)
-    if block_given?
+    left = @pause - (Time.now - @latest)
+    sleep left if left.positive?
+    result = if block_given?
       @origin.__send__(*args) do |*a|
         yield(*a)
       end
     else
       @origin.__send__(*args)
     end
+    @latest = Time.now
+    result
   end
 
   def respond_to?(method, include_private = false)

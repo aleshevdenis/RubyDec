@@ -31,7 +31,7 @@ obj.foo
 
 There will be a forced delay of 500 milliseconds between `.foo` calls.
 
-Keep in mind that `Obk` is thread-safe.
+Keep in mind that `Obk` is _not_ thread-safe.
 
 ## How to contribute
 
