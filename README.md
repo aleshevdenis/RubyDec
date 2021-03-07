@@ -26,10 +26,10 @@ require 'RubyDec'
 obj = Obk.new(obj, pause: 500)
 obj.foo
 # Forced 500ms delay here
-obj.foo
+obj.bar
 ```
 
-There will be a forced delay of 500 milliseconds between `.foo` calls.
+There will be a forced delay of 500 milliseconds between `.foo` and `.bar` calls.
 
 Keep in mind that `Obk` is _not_ thread-safe.
 
