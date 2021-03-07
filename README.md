@@ -5,7 +5,7 @@
 
 
 
-
+[![Build status](https://ci.appveyor.com/api/projects/status/fb01sojss2q1gwot?svg=true)](https://ci.appveyor.com/project/denistreshchev/RubyDec)
 
 
 
