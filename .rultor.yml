@@ -1,0 +1,24 @@
+assets:
+  rubygems.yml: denistreshchev/home#assets/rubygems.yml
+install: |-
+  export GEM_HOME=~/.ruby
+  export GEM_PATH=$GEM_HOME:$GEM_PATH
+  sudo bundle install --no-color "--gemfile=$(pwd)/Gemfile"
+release:
+  script: |-
+    bundle exec rake
+    rm -rf *.gem
+    sed -i "s/0\.0\.0/${tag}/g" RubyDec.gemspec
+    git add RubyDec.gemspec
+    git commit -m "Version set to ${tag}"
+    gem build RubyDec.gemspec
+    chmod 0600 ../rubygems.yml
+    gem push *.gem --config-file ../rubygems.yml
+merge:
+  script: |-
+    bundle install
+    bundle exec rake
+deploy:
+  script: |-
+    echo 'Nothing to deploy'
+    exit -1

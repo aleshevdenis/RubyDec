@@ -1,0 +1,9 @@
+errors:
+  - denistreshchev@gmail.com
+# alerts:
+#   github:
+#     - denistreshchev
+
+tags:
+  - pdd
+  - bug

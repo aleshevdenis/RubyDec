@@ -1,0 +1,28 @@
+AllCops:
+  DisplayCopNames: true
+  TargetRubyVersion: 2.3
+
+Layout/EndOfLine:
+  EnforcedStyle: lf
+Style/MethodMissingSuper:
+  Enabled: false
+Layout/EmptyLineAfterGuardClause:
+  Enabled: false
+Layout/MultilineMethodCallIndentation:
+  Enabled: false
+Metrics/AbcSize:
+  Max: 65
+Metrics/BlockLength:
+  Max: 30
+Metrics/MethodLength:
+  Max: 50
+Metrics/ClassLength:
+  Max: 180
+Metrics/CyclomaticComplexity:
+  Max: 10
+Metrics/PerceivedComplexity:
+  Max: 10
+Metrics/ParameterLists:
+  Max: 10
+Layout/AlignParameters:
+  Enabled: false
