@@ -36,11 +36,11 @@ class ObkTest < Minitest::Test
     def obj.read(foo)
       foo
     end
-    foo = Obk.new(obj, pause: 100)
+    obj = Obk.new(obj, pause: 1000)
     start = Time.now
-    assert_equal(42, foo.read(42))
-    assert_equal(42, foo.read(42))
+    assert_equal(42, obj.read(42))
+    assert_equal(42, obj.read(42))
     stop = Time.now
-    assert(stop - start > 0.1)
+    assert(stop - start > 1)
   end
 end

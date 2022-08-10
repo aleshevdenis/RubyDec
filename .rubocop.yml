@@ -1,10 +1,14 @@
 AllCops:
   DisplayCopNames: true
   TargetRubyVersion: 2.3
+  NewCops: enable
+  SuggestExtensions: false
 
 Layout/EndOfLine:
   EnforcedStyle: lf
-Style/MethodMissingSuper:
+Style/OptionalBooleanParameter:
+  Enabled: false
+Lint/MissingSuper:
   Enabled: false
 Metrics/MethodLength:
   Max: 50
