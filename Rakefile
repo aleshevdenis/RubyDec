@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-# Copyright (c) 2021 Denis Treshchev
+# Copyright (c) 2021-2022 Denis Treshchev
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the 'Software'), to deal
@@ -54,4 +54,12 @@ desc 'Run RuboCop on all directories'
 RuboCop::RakeTask.new(:rubocop) do |task|
   task.fail_on_error = true
   task.requires << 'rubocop-rspec'
+end
+
+task :copyright do
+  sh "grep -q -r '2021-#{Date.today.strftime('%Y')}' \
+    --include '*.rb' \
+    --include '*.txt' \
+    --include 'Rakefile' \
+    ."
 end

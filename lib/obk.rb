@@ -2,7 +2,7 @@
 
 # (The MIT License)
 #
-# Copyright (c) 2021 Denis Treshchev
+# Copyright (c) 2021-2022 Denis Treshchev
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the 'Software'), to deal
@@ -28,7 +28,7 @@
 # {README}[https://github.com/denistreshchev/RubyDec/blob/master/README.md] file.
 #
 # Author:: Denis Treshchev (denistreshchev@gmail.com)
-# Copyright:: Copyright (c) 2021 Denis Treshchev
+# Copyright:: Copyright (c) 2021-2022 Denis Treshchev
 # License:: MIT
 class Obk
   def initialize(origin, pause: 1000)
