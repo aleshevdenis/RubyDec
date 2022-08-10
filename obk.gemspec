@@ -2,7 +2,7 @@
 
 # (The MIT License)
 #
-# Copyright (c) 2021 Denis Treshchev
+# Copyright (c) 2021-2022 Denis Treshchev
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the 'Software'), to deal

@@ -8,10 +8,7 @@ install: |
 release:
   script: |-
     bundle exec rake clean test rubocop copyright
-    sed -i "s/1\.0\.snapshot/${tag}/g" lib/sibit/version.rb
-    git add lib/sibit/version.rb
-    git commit -m "version set to ${tag}"
-    gem build sibit.gemspec
+    gem build RubyDec.gemspec
     chmod 0600 ../rubygems.yml
     gem push *.gem --config-file ../rubygems.yml
 merge:
