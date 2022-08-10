@@ -8,6 +8,9 @@ install: |
 release:
   script: |-
     bundle exec rake clean test rubocop copyright
+    sed -i "s/0\.0\.0/${tag}/g" RubyDec.gemspec
+    git add RubyDec.gemspec
+    git commit -m "version set to ${tag}"
     gem build RubyDec.gemspec
     chmod 0600 ../rubygems.yml
     gem push *.gem --config-file ../rubygems.yml
