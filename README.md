@@ -1,17 +1,5 @@
 
 
-
-
-
-
-
-
-
-
-
-
-[![License](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/denistreshchev/RubyDec/blob/master/LICENSE.txt)
-
 First, install it:
 
 ```bash
@@ -36,8 +24,8 @@ Keep in mind that `Obk` is _not_ thread-safe.
 
 
 Make sure you build is green before you contribute
-your pull request. You will need to have [Ruby](https://www.ruby-lang.org/en 2.3+ and
-[Bundler](https://bundler.io installed. Then:
+your pull request. You will need to have [Ruby](https://www.ruby-lang.org/en) 2.3+ and
+[Bundler](https://bundler.io) installed. Then:
 
 ```
 $ bundle update
